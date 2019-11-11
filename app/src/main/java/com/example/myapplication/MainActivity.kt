@@ -13,12 +13,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val repository = MoviesRepository(MoviesApi())
-
-        GlobalScope.launch(Dispatchers.Main) {
-            val movies = repository.getMovies()
-            text.text = movies.toString()
-        }
 
     }
 }

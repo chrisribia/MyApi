@@ -6,8 +6,7 @@
     tools:context=".MoviesFragment">
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_movies"
         android:layout_width="match_parent"
-        android:id="@+id/recylerview_movies"
         android:layout_height="match_parent" />
-
 </FrameLayout>
